@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light only">
+<meta name="supported-color-schemes" content="light">
+<title>Declare &mdash; Daily Declarations That Change Everything</title>
+<meta name="description" content="1,500+ faith-filled declarations for every area of your life. Speak what God says. Watch things shift.">
+<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Jost:wght@300;400;500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{
+  scroll-behavior:smooth;
+  color-scheme:light;
+  background:#FDFAF5;
+}
+body{
+  background:#FDFAF5 !important;
+  color:#1A0F08 !important;
+  font-family:'Jost',Georgia,sans-serif;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+}
+/* Force light mode — override any browser dark mode */
+@media(prefers-color-scheme:dark){
+  html,body{background:#FDFAF5 !important;color:#1A0F08 !important;}
+  .void{background:#FDFAF5 !important;color:#1A0F08 !important;}
+  .perch{background:#FDFAF5 !important;color:#1A0F08 !important;}
+  .void-h2,.void-body,.pullquote,.section-close,.section-tag{color:#1A0F08 !important;}
+  .perch-h2,.perch-body,.perch-pullquote{color:#1A0F08 !important;}
+  .void-body{color:#3D2810 !important;}
+  .perch-body{color:#3D2810 !important;}
+}
+
+/* PALETTE
+Page bg:    #FDFAF5
+Surface:    #F5EFE3
+Surface2:   #EDE4D3
+Brown:      #7C4A2D
+Brown dark: #4A2010
+Gold:       #C9920A
+Gold light: #F0C96E
+Text:       #1A0F08
+Body text:  #3D2810
+Muted:      #7A6045
+Border:     rgba(124,74,45,.13)
+*/
+
+/* ── NAV ── */
+.nav{
+position:fixed;top:0;left:0;right:0;z-index:100;
+padding:16px 40px;
+display:flex;align-items:center;justify-content:space-between;
+background:rgba(253,250,245,.95);
+backdrop-filter:blur(20px);
+border-bottom:1px solid rgba(124,74,45,.1);
+}
+.nav-logo{
+font-family:‘Cormorant Garamond’,Georgia,serif;
+font-size:26px;font-weight:700;color:#1A0F08;
+letter-spacing:-.5px;display:flex;align-items:center;gap:9px;
+}
+.nav-logo-mark{
+width:34px;height:34px;border-radius:9px;
+background:linear-gradient(145deg,#9B5B35,#4A2010);
+display:flex;align-items:center;justify-content:center;
+font-size:15px;color:#F5EFE3;
+box-shadow:0 3px 10px rgba(74,32,16,.3);
+}
+.nav-cta{
+background:linear-gradient(145deg,#9B5B35,#4A2010);
+color:#FDFAF5;font-size:13px;font-weight:600;
+padding:10px 24px;border-radius:50px;
+text-decoration:none;letter-spacing:.3px;
+box-shadow:0 4px 16px rgba(74,32,16,.25);
+transition:transform .15s,box-shadow .15s;
+}
+.nav-cta:hover{transform:translateY(-1px);box-shadow:0 7px 22px rgba(74,32,16,.35);}
+
+/* ── HERO ── */
+.hero{
+min-height:100vh;
+background:#FDFAF5;
+display:flex;flex-direction:column;
+align-items:center;justify-content:center;
+text-align:center;
+padding:130px 24px 80px;
+position:relative;overflow:hidden;
+}
+.hero-grain{
+position:absolute;inset:0;
+background-image:url(“data:image/svg+xml,%3Csvg viewBox=‘0 0 256 256’ xmlns=‘http://www.w3.org/2000/svg’%3E%3Cfilter id=‘noise’%3E%3CfeTurbulence type=‘fractalNoise’ baseFrequency=‘0.9’ numOctaves=‘4’ stitchTiles=‘stitch’/%3E%3C/filter%3E%3Crect width=‘100%25’ height=‘100%25’ filter=‘url(%23noise)’ opacity=‘0.03’/%3E%3C/svg%3E”);
+pointer-events:none;opacity:.4;
+}
+.hero-glow{
+position:absolute;top:-200px;left:50%;transform:translateX(-50%);
+width:900px;height:600px;
+background:radial-gradient(ellipse,rgba(201,146,10,.07) 0%,transparent 65%);
+pointer-events:none;
+}
+.hero-eyebrow{
+display:inline-flex;align-items:center;gap:10px;
+font-family:‘DM Mono’,monospace;
+font-size:10px;letter-spacing:3.5px;font-weight:500;
+color:#7C4A2D;text-transform:uppercase;
+background:rgba(124,74,45,.07);
+border:1px solid rgba(124,74,45,.15);
+padding:7px 18px;border-radius:50px;
+margin-bottom:28px;
+}
+.hero-eyebrow-dot{
+width:6px;height:6px;border-radius:50%;
+background:#C9920A;
+box-shadow:0 0 6px rgba(201,146,10,.6);
+}
+.hero-h1{
+font-family:‘Cormorant Garamond’,Georgia,serif;
+font-size:clamp(56px,9.5vw,108px);
+font-weight:300;line-height:1.03;
+letter-spacing:-3px;
+color:#1A0F08;
+max-width:860px;
+margin-bottom:10px;
+}
+.hero-h1 em{font-style:italic;color:#7C4A2D;}
+.hero-sub-serif{
+font-family:‘Cormorant Garamond’,serif;
+font-size:clamp(20px,3vw,32px);
+font-weight:300;font-style:italic;
+color:#7A6045;margin-bottom:26px;letter-spacing:-.3px;
+}
+.hero-p{
+font-size:clamp(15px,1.8vw,18px);
+color:#3D2810;line-height:1.85;
+max-width:520px;margin:0 auto 48px;font-weight:400;
+}
+.hero-ctas{
+display:flex;flex-direction:column;align-items:center;gap:14px;margin-bottom:52px;
+}
+.cta-main{
+background:linear-gradient(145deg,#9B5B35,#4A2010);
+color:#FDFAF5;font-size:16px;font-weight:600;
+padding:17px 44px;border-radius:50px;
+text-decoration:none;
+box-shadow:0 10px 32px rgba(74,32,16,.3);
+transition:transform .15s,box-shadow .15s;
+display:inline-flex;align-items:center;gap:10px;
+letter-spacing:.2px;
+}
+.cta-main:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(74,32,16,.38);}
+.cta-pair{display:flex;gap:12px;align-items:center;flex-wrap:wrap;justify-content:center;}
+.cta-a{
+background:linear-gradient(145deg,#9B5B35,#4A2010);
+color:#FDFAF5;font-size:14px;font-weight:600;
+padding:14px 30px;border-radius:50px;
+text-decoration:none;
+box-shadow:0 6px 20px rgba(74,32,16,.25);
+transition:transform .15s;
+}
+.cta-a:hover{transform:translateY(-1px);}
+.cta-b{
+position:relative;
+background:linear-gradient(145deg,#C9920A,#A97208);
+color:#FDFAF5;font-size:14px;font-weight:700;
+padding:14px 30px;border-radius:50px;
+text-decoration:none;
+box-shadow:0 6px 20px rgba(201,146,10,.35);
+transition:transform .15s,box-shadow .15s;
+display:inline-flex;align-items:center;gap:8px;
+}
+.cta-b:hover{transform:translateY(-1px);box-shadow:0 10px 28px rgba(201,146,10,.45);}
+.cta-b-badge{
+background:rgba(255,255,255,.25);
+font-size:9px;font-weight:700;letter-spacing:1px;
+padding:2px 8px;border-radius:10px;
+}
+.hero-trust{
+font-size:13px;color:#7A6045;
+display:flex;align-items:center;gap:22px;flex-wrap:wrap;justify-content:center;
+}
+.hero-trust span{display:flex;align-items:center;gap:6px;}
+.trust-check{color:#C9920A;font-size:14px;}
+
+/* ── DECLARATION SHOWCASE STRIP ── */
+.decl-strip{
+background:#F5EFE3;
+border-top:1px solid rgba(124,74,45,.1);
+border-bottom:1px solid rgba(124,74,45,.1);
+padding:56px 0;
+overflow:hidden;
+position:relative;
+}
+.decl-strip-label{
+text-align:center;
+font-family:‘DM Mono’,monospace;
+font-size:10px;letter-spacing:3px;color:#7A6045;text-transform:uppercase;
+margin-bottom:36px;
+}
+.decl-cards-row{
+display:flex;gap:20px;padding:0 40px;
+overflow-x:auto;scrollbar-width:none;
+-webkit-overflow-scrolling:touch;
+justify-content:center;flex-wrap:wrap;
+}
+.decl-cards-row::-webkit-scrollbar{display:none}
+
+/* Styled declaration cards matching the app aesthetic */
+.decl-card{
+background:#FDFAF5;
+border:1px solid rgba(124,74,45,.12);
+border-radius:20px;
+padding:28px 24px;
+min-width:280px;max-width:320px;
+flex-shrink:0;
+position:relative;overflow:hidden;
+box-shadow:0 4px 20px rgba(44,24,16,.06);
+transition:transform .25s,box-shadow .25s;
+}
+.decl-card:hover{transform:translateY(-5px);box-shadow:0 14px 36px rgba(44,24,16,.1);}
+.decl-card-cat{
+font-family:‘DM Mono’,monospace;
+font-size:8px;letter-spacing:3px;color:#7C4A2D;
+text-transform:uppercase;margin-bottom:14px;font-weight:500;
+}
+.decl-card-num{
+font-family:‘Cormorant Garamond’,serif;
+font-size:56px;font-weight:300;
+color:rgba(124,74,45,.1);line-height:1;
+margin-bottom:8px;
+}
+.decl-card-stars{
+font-size:10px;color:rgba(201,146,10,.5);
+letter-spacing:5px;margin-bottom:14px;
+}
+.decl-card-text{
+font-family:‘Cormorant Garamond’,serif;
+font-size:15px;line-height:1.75;
+color:#1A0F08;font-weight:400;
+}
+.decl-card-text em{
+color:#7C4A2D;font-style:italic;font-weight:600;
+}
+.decl-card-accent{
+position:absolute;bottom:0;left:0;right:0;height:3px;
+background:linear-gradient(90deg,#7C4A2D,#C9920A);
+border-radius:0 0 20px 20px;
+}
+
+/* Dark declaration card variant */
+.decl-card.dark{
+background:linear-gradient(160deg,#4A2010,#2C1008);
+border-color:rgba(201,146,10,.2);
+}
+.decl-card.dark .decl-card-cat{color:#C9920A;}
+.decl-card.dark .decl-card-num{color:rgba(201,146,10,.12);}
+.decl-card.dark .decl-card-text{color:#F5EFE3;}
+.decl-card.dark .decl-card-text em{color:#F0C96E;}
+.decl-card.dark .decl-card-stars{color:rgba(240,201,110,.4);}
+
+/* Gold declaration card variant */
+.decl-card.gold-card{
+background:linear-gradient(160deg,#C9920A,#8B6208);
+border-color:transparent;
+}
+.decl-card.gold-card .decl-card-cat{color:rgba(253,250,245,.7);}
+.decl-card.gold-card .decl-card-num{color:rgba(253,250,245,.12);}
+.decl-card.gold-card .decl-card-text{color:#FDFAF5;}
+.decl-card.gold-card .decl-card-text em{color:#FFF5D6;}
+.decl-card.gold-card .decl-card-stars{color:rgba(255,255,255,.4);}
+.decl-card.gold-card .decl-card-accent{background:rgba(255,255,255,.2);}
+
+/* ── VOID SECTION ── */
+.void{
+padding:100px 24px;
+max-width:700px;margin:0 auto;
+text-align:center;
+background:#FDFAF5;
+position:relative;
+z-index:1;
+}
+.section-tag{
+font-family:‘DM Mono’,monospace;
+font-size:10px;letter-spacing:3.5px;font-weight:500;
+color:#7C4A2D;text-transform:uppercase;margin-bottom:18px;
+}
+.void-h2{
+font-family:‘Cormorant Garamond’,Georgia,serif;
+font-size:clamp(36px,6vw,62px);
+font-weight:400;line-height:1.18;
+letter-spacing:-1.5px;color:#1A0F08 !important;margin-bottom:32px;
+}
+.void-h2 em{font-style:italic;color:#7C4A2D !important;}
+.void-body{
+font-size:17px;color:#3D2810 !important;line-height:1.95;margin-bottom:22px;font-weight:400;
+}
+.void-body strong{color:#1A0F08 !important;font-weight:600;}
+.pullquote{
+font-family:‘Cormorant Garamond’,serif;
+font-size:22px;font-style:italic;font-weight:400;
+color:#1A0F08 !important;
+border-left:3px solid #C9920A;
+padding:18px 22px;
+background:rgba(201,146,10,.05) !important;
+border-radius:0 14px 14px 0;
+text-align:left;margin:36px 0;line-height:1.55;
+}
+.section-close{
+font-family:‘Cormorant Garamond’,serif;
+font-size:20px;font-style:italic;color:#1A0F08 !important;font-weight:500;margin-top:20px;
+}
+
+/* ── DARK BREAK ── */
+.dark-break{
+background:linear-gradient(160deg,#3A1A08,#1A0A04);
+padding:80px 24px;text-align:center;position:relative;overflow:hidden;
+}
+.dark-break-glow{
+position:absolute;inset:0;
+background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(201,146,10,.09) 0%,transparent 70%);
+pointer-events:none;
+}
+.dark-break-inner{max-width:700px;margin:0 auto;position:relative;}
+.dark-break p{
+font-family:‘Cormorant Garamond’,serif;
+font-size:clamp(22px,4vw,38px);
+font-weight:300;line-height:1.55;
+color:#EDE4D3;margin-bottom:22px;font-style:italic;
+}
+.dark-break p em{color:#F0C96E;font-style:normal;font-weight:600;}
+.dark-break-rule{width:52px;height:1px;background:#C9920A;opacity:.4;margin:28px auto;}
+.dark-break-close{
+font-family:‘Cormorant Garamond’,serif;
+font-size:20px;font-style:italic;color:#C9920A;letter-spacing:.2px;
+}
+
+/* ── PERCH ── */
+.perch{
+padding:100px 24px;
+max-width:740px;margin:0 auto;text-align:center;
+background:#FDFAF5;
+position:relative;z-index:1;
+}
+.perch-h2{
+font-family:‘Cormorant Garamond’,serif;
+font-size:clamp(34px,5.5vw,60px);
+font-weight:400;line-height:1.18;
+letter-spacing:-1.5px;color:#1A0F08 !important;margin-bottom:30px;
+}
+.perch-body{
+font-size:17px;color:#3D2810 !important;line-height:1.95;margin-bottom:22px;
+}
+.perch-body strong{color:#1A0F08 !important;font-weight:600;}
+.perch-pullquote{
+font-family:‘Cormorant Garamond’,serif;
+font-size:24px;font-style:italic;font-weight:300;
+color:#1A0F08 !important;margin:48px auto;
+max-width:580px;line-height:1.55;
+position:relative;padding:0 20px;
+}
+.perch-pullquote::before{
+content:’\201C’;font-size:110px;color:#C9920A;opacity:.18;
+position:absolute;top:-24px;left:-8px;
+font-family:‘Cormorant Garamond’,serif;line-height:1;
+}
+
+/* ── MORE DECLARATIONS SHOWCASE ── */
+.decl-showcase{
+padding:60px 24px 90px;
+background:#F5EFE3;
+}
+.decl-showcase-inner{max-width:1100px;margin:0 auto;}
+.decl-showcase-hdr{text-align:center;margin-bottom:48px;}
+.decl-showcase-hdr h2{
+font-family:‘Cormorant Garamond’,serif;
+font-size:clamp(30px,4.5vw,50px);font-weight:400;
+letter-spacing:-1px;color:#1A0F08;margin-bottom:10px;
+}
+.decl-showcase-hdr p{font-size:16px;color:#7A6045;}
+.decl-bento{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+grid-template-rows:auto auto;
+gap:16px;
+}
+.bento-card{
+background:#FDFAF5;
+border:1px solid rgba(124,74,45,.1);
+border-radius:20px;padding:30px 26px;
+position:relative;overflow:hidden;
+box-shadow:0 2px 16px rgba(44,24,16,.05);
+transition:transform .22s,box-shadow .22s;
+}
+.bento-card:hover{transform:translateY(-4px);box-shadow:0 12px 32px rgba(44,24,16,.09);}
+.bento-card.span2{grid-column:span 2;}
+.bento-card.dark-bento{
+background:linear-gradient(160deg,#3A1A08,#200C04);
+border-color:rgba(201,146,10,.15);
+}
+.bento-card.gold-bento{
+background:linear-gradient(145deg,#B8820A,#7A5608);
+border-color:transparent;
+}
+.bento-cat-label{
+font-family:‘DM Mono’,monospace;
+font-size:8px;letter-spacing:3px;color:#7C4A2D;
+text-transform:uppercase;margin-bottom:12px;font-weight:500;
+}
+.bento-card.dark-bento .bento-cat-label{color:#F0C96E;}
+.bento-card.gold-bento .bento-cat-label{color:rgba(253,250,245,.65);}
+.bento-num{
+font-family:‘Cormorant Garamond’,serif;
+font-size:48px;font-weight:300;
+color:rgba(124,74,45,.1);line-height:1;margin-bottom:6px;
+}
+.bento-card.dark-bento .bento-num{color:rgba(240,201,110,.1);}
+.bento-card.gold-bento .bento-num{color:rgba(253,250,245,.12);}
+.bento-stars{font-size:9px;letter-spacing:4px;color:rgba(201,146,10,.4);margin-bottom:12px;}
+.bento-card.dark-bento .bento-stars{color:rgba(240,201,110,.35);}
+.bento-card.gold-bento .bento-stars{color:rgba(253,250,245,.35);}
+.bento-text{
+font-family:‘Cormorant Garamond’,serif;
+font-size:15px;line-height:1.75;color:#1A0F08;
+}
+.bento-card.dark-bento .bento-text{color:#EDE4D3;}
+.bento-card.gold-bento .bento-text{color:#FDFAF5;}
+.bento-text em{color:#7C4A2D;font-style:italic;font-weight:600;}
+.bento-card.dark-bento .bento-text em{color:#F0C96E;}
+.bento-card.gold-bento .bento-text em{color:#FFF5D6;}
+.bento-accent{
+position:absolute;bottom:0;left:0;right:0;height:3px;
+background:linear-gradient(90deg,#7C4A2D,#C9920A);
+border-radius:0 0 20px 20px;
+}
+.bento-card.dark-bento .bento-accent{background:linear-gradient(90deg,#C9920A,#F0C96E);}
+.bento-card.gold-bento .bento-accent{background:rgba(255,255,255,.2);}
+
+/* ── CATEGORIES ── */
+.cats-section{
+padding:90px 24px;
+background:#FDFAF5;
+}
+.cats-inner{max-width:1080px;margin:0 auto;}
+.cats-hdr{text-align:center;margin-bottom:52px;}
+.cats-hdr h2{
+font-family:‘Cormorant Garamond’,serif;
+font-size:clamp(30px,5vw,54px);font-weight:400;
+letter-spacing:-1.5px;color:#1A0F08;margin-bottom:12px;
+}
+.cats-hdr p{font-size:17px;color:#7A6045;max-width:460px;margin:0 auto;line-height:1.7;}
+.cats-grid{
+display:grid;
+grid-template-columns:repeat(auto-fill,minmax(220px,1fr));
+gap:14px;
+}
+.cat-card{
+background:#F5EFE3;
+border:1px solid rgba(124,74,45,.1);
+border-radius:18px;padding:26px 22px;
+transition:transform .2s,box-shadow .2s,border-color .2s;
+}
+.cat-card:hover{
+transform:translateY(-4px);
+box-shadow:0 12px 30px rgba(44,24,16,.08);
+border-color:rgba(124,74,45,.22);
+}
+.cat-card.featured-cat{
+background:linear-gradient(155deg,#7C4A2D,#4A2010);
+border-color:transparent;
+box-shadow:0 8px 28px rgba(74,32,16,.25);
+}
+.cat-emoji{font-size:30px;margin-bottom:14px;}
+.cat-name{
+font-family:‘Cormorant Garamond’,serif;
+font-size:20px;font-weight:700;color:#1A0F08;margin-bottom:6px;
+}
+.cat-card.featured-cat .cat-name{color:#F5EFE3;}
+.cat-desc{font-size:13px;color:#7A6045;line-height:1.55;margin-bottom:12px;}
+.cat-card.featured-cat .cat-desc{color:rgba(245,239,227,.7);}
+.cat-count{
+font-family:‘DM Mono’,monospace;font-size:11px;font-weight:500;
+color:#C9920A;letter-spacing:.5px;
+}
+.cat-card.featured-cat .cat-count{color:rgba(240,201,110,.85);}
+.cats-more{
+text-align:center;margin-top:36px;
+font-family:‘Cormorant Garamond’,serif;
+font-size:20px;font-style:italic;color:#7A6045;
+}
+
+/* ── SOAR ── */
+.soar{
+padding:90px 24px;
+background:#F5EFE3;
+}
+.soar-inner{max-width:1040px;margin:0 auto;}
+.soar-hdr{text-align:center;margin-bottom:56px;}
+.soar-hdr h2{
+font-family:‘Cormorant Garamond’,serif;
+font-size:clamp(30px,5vw,54px);font-weight:400;
+letter-spacing:-1.5px;color:#1A0F08;margin-bottom:12px;
+}
+.soar-hdr p{font-size:16px;color:#7A6045;max-width:440px;margin:0 auto;}
+.soar-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+.soar-card{
+background:#FDFAF5;
+border:1px solid rgba(124,74,45,.1);
+border-radius:20px;padding:34px 28px;
+position:relative;overflow:hidden;
+transition:transform .2s,box-shadow .2s;
+}
+.soar-card:hover{transform:translateY(-4px);box-shadow:0 14px 34px rgba(44,24,16,.07);}
+.soar-card::before{
+content:’’;position:absolute;top:0;left:0;right:0;height:3px;
+background:linear-gradient(90deg,#7C4A2D,#C9920A);
+}
+.soar-num{
+font-family:‘Cormorant Garamond’,serif;
+font-size:72px;font-weight:300;
+color:rgba(124,74,45,.08);line-height:1;margin-bottom:14px;
+}
+.soar-card h3{
+font-family:‘Cormorant Garamond’,serif;
+font-size:26px;font-weight:700;color:#1A0F08;
+margin-bottom:12px;letter-spacing:-.3px;
+}
+.soar-card p{font-size:15px;color:#3D2810;line-height:1.8;}
+
+/* ── TESTIMONIALS ── */
+.testi{padding:90px 24px;background:#FDFAF5;}
+.testi-inner{max-width:1020px;margin:0 auto;}
+.testi-hdr{text-align:center;margin-bottom:50px;}
+.testi-hdr h2{
+font-family:‘Cormorant Garamond’,serif;
+font-size:clamp(28px,4.5vw,50px);font-weight:400;
+letter-spacing:-1.5px;color:#1A0F08;margin-bottom:10px;
+}
+.testi-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;}
+.testi-card{
+background:#F5EFE3;
+border:1px solid rgba(124,74,45,.1);
+border-radius:20px;padding:30px;
+}
+.testi-quote{
+font-family:‘Cormorant Garamond’,serif;
+font-size:18px;font-style:italic;
+color:#1A0F08;line-height:1.7;margin-bottom:22px;
+}
+.testi-quote::before{content:’\201C’;color:#C9920A;font-size:30px;line-height:0;vertical-align:-10px;margin-right:3px;}
+.testi-who{display:flex;align-items:center;gap:12px;}
+.testi-av{
+width:40px;height:40px;border-radius:50%;flex-shrink:0;
+background:linear-gradient(135deg,#9B5B35,#C9920A);
+display:flex;align-items:center;justify-content:center;font-size:16px;
+}
+.testi-name{font-size:14px;font-weight:600;color:#1A0F08;}
+.testi-desc{font-size:12px;color:#7A6045;margin-top:2px;}
+
+/* ── PROMISE STRIP ── */
+.promise{
+background:linear-gradient(160deg,#4A2010,#1A0A04);
+padding:80px 24px;text-align:center;position:relative;overflow:hidden;
+}
+.promise-glow{
+position:absolute;inset:0;
+background:radial-gradient(ellipse 70% 60% at 50% 50%,rgba(201,146,10,.1) 0%,transparent 70%);
+pointer-events:none;
+}
+.promise-inner{max-width:700px;margin:0 auto;position:relative;}
+.promise p{
+font-family:‘Cormorant Garamond’,serif;
+font-size:clamp(22px,3.5vw,38px);
+font-weight:300;line-height:1.55;
+color:#EDE4D3;margin-bottom:18px;font-style:italic;
+}
+.promise p em{color:#F0C96E;font-style:normal;font-weight:600;}
+.promise-rule{width:52px;height:1px;background:#C9920A;opacity:.4;margin:28px auto;}
+
+/* ── PRICING ── */
+.pricing{padding:100px 24px;background:#FDFAF5;}
+.pricing-inner{max-width:900px;margin:0 auto;text-align:center;}
+.pricing-hdr h2{
+font-family:‘Cormorant Garamond’,serif;
+font-size:clamp(30px,5vw,54px);font-weight:400;
+letter-spacing:-1.5px;color:#1A0F08;margin-bottom:12px;
+}
+.pricing-hdr p{font-size:17px;color:#7A6045;margin-bottom:52px;line-height:1.7;}
+.pricing-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:22px;margin-bottom:40px;align-items:stretch;
+}
+
+/* Monthly — clean minimal */
+.price-card{
+background:#F5EFE3;
+border:1.5px solid rgba(124,74,45,.14);
+border-radius:24px;padding:36px 32px;
+text-align:left;position:relative;overflow:hidden;
+transition:transform .2s;display:flex;flex-direction:column;
+}
+.price-card:hover{transform:translateY(-3px);}
+
+/* 6-month HERO card */
+.price-card.hero-card{
+background:linear-gradient(155deg,#3A1A08,#200C04);
+border:2px solid rgba(201,146,10,.45);
+box-shadow:0 20px 60px rgba(74,32,16,.3),0 0 0 1px rgba(201,146,10,.1);
+}
+.hero-card-glow{
+position:absolute;top:-80px;right:-80px;
+width:260px;height:260px;
+background:radial-gradient(circle,rgba(201,146,10,.12) 0%,transparent 70%);
+pointer-events:none;
+}
+.best-offer-badge{
+display:inline-flex;align-items:center;gap:6px;
+background:linear-gradient(135deg,#C9920A,#A97208);
+color:#FDFAF5;font-size:10px;font-weight:700;
+letter-spacing:2px;text-transform:uppercase;
+padding:6px 14px;border-radius:50px;
+margin-bottom:22px;
+box-shadow:0 4px 12px rgba(201,146,10,.4);
+}
+.best-offer-badge-star{font-size:11px;}
+.price-period{
+font-family:‘DM Mono’,monospace;font-size:11px;
+letter-spacing:2px;color:#7C4A2D;text-transform:uppercase;margin-bottom:14px;
+}
+.hero-card .price-period{color:#F0C96E;}
+.price-amount{
+font-family:‘Cormorant Garamond’,serif;
+font-size:68px;font-weight:400;color:#1A0F08;
+letter-spacing:-3px;line-height:1;margin-bottom:4px;
+display:flex;align-items:flex-start;
+}
+.hero-card .price-amount{color:#FDFAF5;}
+.price-amount sup{font-size:28px;font-family:‘Cormorant Garamond’,serif;margin-top:10px;letter-spacing:0;}
+.price-per{font-size:14px;color:#7A6045;margin-bottom:8px;}
+.hero-card .price-per{color:rgba(237,228,211,.65);}
+.price-saving{
+display:inline-block;
+background:rgba(201,146,10,.12);border:1px solid rgba(201,146,10,.25);
+color:#C9920A;font-size:12px;font-weight:600;
+padding:4px 12px;border-radius:20px;margin-bottom:26px;
+}
+.hero-card .price-saving{
+background:rgba(240,201,110,.15);border-color:rgba(240,201,110,.3);color:#F0C96E;
+}
+.price-divider{
+width:100%;height:1px;
+background:rgba(124,74,45,.12);margin-bottom:20px;
+}
+.hero-card .price-divider{background:rgba(255,255,255,.08);}
+.price-includes-title{
+font-size:11px;font-weight:700;letter-spacing:2px;
+color:#7A6045;text-transform:uppercase;margin-bottom:14px;
+}
+.hero-card .price-includes-title{color:rgba(237,228,211,.5);}
+.price-item{
+display:flex;align-items:flex-start;gap:10px;
+font-size:14px;color:#3D2810;margin-bottom:11px;line-height:1.4;
+}
+.hero-card .price-item{color:#EDE4D3;}
+.price-check{color:#C9920A;font-size:15px;flex-shrink:0;margin-top:-1px;font-weight:600;}
+.hero-card .price-check{color:#F0C96E;}
+.price-item-bold{font-weight:600;color:#1A0F08;}
+.hero-card .price-item-bold{color:#FDFAF5;}
+.price-cta{
+display:block;width:100%;
+background:linear-gradient(145deg,#9B5B35,#4A2010);
+color:#FDFAF5;font-size:15px;font-weight:600;
+padding:16px;border-radius:50px;
+text-decoration:none;text-align:center;
+box-shadow:0 6px 22px rgba(74,32,16,.25);
+transition:transform .15s,box-shadow .15s;
+letter-spacing:.2px;margin-top:auto;
+}
+.price-cta:hover{transform:translateY(-2px);box-shadow:0 10px 30px rgba(74,32,16,.35);}
+.price-cta.gold-cta{
+background:linear-gradient(145deg,#C9920A,#8B6208);
+box-shadow:0 6px 22px rgba(201,146,10,.35);
+font-size:16px;font-weight:700;
+padding:18px;
+}
+.price-cta.gold-cta:hover{box-shadow:0 12px 34px rgba(201,146,10,.5);}
+.price-note{font-size:12px;color:#7A6045;text-align:center;margin-top:12px;}
+.hero-card .price-note{color:rgba(237,228,211,.45);}
+.pricing-guarantee{
+font-size:14px;color:#7A6045;line-height:1.85;
+max-width:500px;margin:0 auto;
+}
+.pricing-guarantee a{color:#7C4A2D;text-decoration:none;}
+.pricing-guarantee strong{color:#1A0F08;}
+
+/* ── CLOSING ── */
+.closing{
+padding:80px 24px 52px;
+text-align:center;
+background:#F5EFE3;
+border-top:1px solid rgba(124,74,45,.1);
+}
+.closing-inner{max-width:540px;margin:0 auto;}
+.closing-logo{
+font-family:‘Cormorant Garamond’,serif;
+font-size:38px;font-weight:700;color:#1A0F08;
+letter-spacing:-1px;margin-bottom:8px;
+display:flex;align-items:center;justify-content:center;gap:12px;
+}
+.closing-mark{
+width:44px;height:44px;border-radius:11px;
+background:linear-gradient(145deg,#9B5B35,#4A2010);
+display:flex;align-items:center;justify-content:center;
+font-size:20px;color:#F5EFE3;
+box-shadow:0 4px 14px rgba(74,32,16,.3);
+}
+.closing-tagline{
+font-family:‘Cormorant Garamond’,serif;
+font-size:19px;font-style:italic;color:#7A6045;margin-bottom:32px;
+}
+.closing-cta{
+background:linear-gradient(145deg,#9B5B35,#4A2010);
+color:#FDFAF5;font-size:16px;font-weight:600;
+padding:16px 38px;border-radius:50px;
+text-decoration:none;display:inline-block;
+box-shadow:0 8px 26px rgba(74,32,16,.25);
+transition:transform .15s;
+}
+.closing-cta:hover{transform:translateY(-1px);}
+.closing-sign{
+font-family:‘Cormorant Garamond’,serif;
+font-size:20px;font-style:italic;color:#7A6045;margin-top:48px;
+}
+.closing-sign strong{color:#C9920A;}
+.closing-email{font-size:12px;color:#7A6045;margin-top:8px;}
+.closing-email a{color:#7C4A2D;text-decoration:none;}
+
+/* ── RESPONSIVE ── */
+@media(max-width:768px){
+.nav{padding:14px 20px;}
+.hero{padding:110px 20px 60px;}
+.bento-card.span2{grid-column:span 1;}
+.decl-bento{grid-template-columns:1fr;}
+.pricing-grid{grid-template-columns:1fr;}
+.cats-grid{grid-template-columns:repeat(2,1fr);}
+.soar-grid{grid-template-columns:1fr;}
+.testi-grid{grid-template-columns:1fr;}
+.void,.perch{padding:70px 20px;}
+.soar,.testi,.cats-section{padding:70px 20px;}
+}
+
+/* ── ANIMATIONS ── */
+@keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:none}}
+.hero-eyebrow{animation:fadeUp .65s ease .1s both}
+.hero-h1{animation:fadeUp .65s ease .2s both}
+.hero-sub-serif{animation:fadeUp .65s ease .3s both}
+.hero-p{animation:fadeUp .65s ease .38s both}
+.hero-ctas{animation:fadeUp .65s ease .46s both}
+.hero-trust{animation:fadeUp .65s ease .54s both}
+</style>
+
+</head>
+<body>
+
+<!-- NAV -->
+
+<nav class="nav">
+  <div class="nav-logo">
+    <div class="nav-logo-mark">&#10022;</div>
+    Declare
+  </div>
+  <a href="https://whop.com/checkout/plan_BIgsqJQsEUlLw" class="nav-cta">Get 6 Months &mdash; $29.99 &rarr;</a>
+</nav>
+
+<!-- ══ HERO ══ -->
+
+<section class="hero">
+  <div class="hero-grain"></div>
+  <div class="hero-glow"></div>
+  <div class="hero-eyebrow"><span class="hero-eyebrow-dot"></span>Faith &middot; Declaration &middot; Power</div>
+  <h1 class="hero-h1">Speak what<br><em>God says.</em></h1>
+  <div class="hero-sub-serif">Watch things shift.</div>
+  <p class="hero-p">1,500+ faith-filled declarations for every area of your life. Open the app. Speak the word. Stand on what God has already promised.</p>
+  <div class="hero-ctas">
+    <div class="cta-pair">
+      <a href="https://whop.com/checkout/plan_D5EFyiFbKpnPC" class="cta-a">Monthly &mdash; $9.99</a>
+      <a href="https://whop.com/checkout/plan_BIgsqJQsEUlLw" class="cta-b">
+        6 Months &mdash; $29.99
+        <span class="cta-b-badge">BEST OFFER</span>
+      </a>
+    </div>
+  </div>
+  <div class="hero-trust">
+    <span><span class="trust-check">&#10022;</span> No download needed</span>
+    <span><span class="trust-check">&#10022;</span> Works on any device</span>
+    <span><span class="trust-check">&#10022;</span> Cancel anytime</span>
+  </div>
+</section>
+
+<!-- ══ DECLARATION CARD STRIP ══ -->
+
+<div class="decl-strip">
+  <div class="decl-strip-label">Inside Declare &mdash; real declarations</div>
+  <div class="decl-cards-row">
+
+```
+<div class="decl-card">
+  <div class="decl-card-cat">Commanding Your Day</div>
+  <div class="decl-card-num">01</div>
+  <div class="decl-card-stars">&#10022; &nbsp;&#10022; &nbsp;&#10022;</div>
+  <div class="decl-card-text">Father, in the name of Jesus, I decree and declare that the favour of the Lord surrounds me as a shield today. <em>You bless the righteous, O Lord, and surround them with favour as with a shield.</em> I receive that shield. Doors open for me. Opportunities come to me. Favour goes before me in the name of Jesus.</div>
+  <div class="decl-card-accent"></div>
+</div>
+
+<div class="decl-card dark">
+  <div class="decl-card-cat">Family</div>
+  <div class="decl-card-num">07</div>
+  <div class="decl-card-stars">&#10022; &nbsp;&#10022; &nbsp;&#10022;</div>
+  <div class="decl-card-text">In the name of Jesus, I decree that my household is covered by the blood of the Lamb. <em>As for me and my house, we will serve the Lord.</em> Every assignment of the enemy against my family is cancelled. My children walk in divine health, wisdom and purpose. My home is a sanctuary of peace.</div>
+  <div class="decl-card-accent"></div>
+</div>
+
+<div class="decl-card gold-card">
+  <div class="decl-card-cat">Breakthroughs</div>
+  <div class="decl-card-num">12</div>
+  <div class="decl-card-stars">&#10022; &nbsp;&#10022; &nbsp;&#10022;</div>
+  <div class="decl-card-text">I decree and declare that every gate that has been closed against my destiny opens now in the name of Jesus. <em>The Lord goes before me and makes the crooked places straight.</em> I do not beg for what belongs to me. I enforce it. I receive it. Every breakthrough is mine now.</div>
+  <div class="decl-card-accent"></div>
+</div>
+
+<div class="decl-card">
+  <div class="decl-card-cat">Courtship &amp; Dating</div>
+  <div class="decl-card-num">03</div>
+  <div class="decl-card-stars">&#10022; &nbsp;&#10022; &nbsp;&#10022;</div>
+  <div class="decl-card-text">In the name of Jesus, I stand at the gate of attracting a godly partner and I decree &mdash; what God has promised is what manifests. Not what the enemy has tried. Not what fear has suggested. <em>What God said. What the covenant guarantees.</em> I receive it now. I enforce it now.</div>
+  <div class="decl-card-accent"></div>
+</div>
+
+<div class="decl-card dark">
+  <div class="decl-card-cat">Health &amp; Wellness</div>
+  <div class="decl-card-num">05</div>
+  <div class="decl-card-stars">&#10022; &nbsp;&#10022; &nbsp;&#10022;</div>
+  <div class="decl-card-text">Father, I decree and declare that my body is the temple of the Holy Spirit. <em>By His stripes I am healed.</em> Every organ in my body functions as You designed it. Divine health is my portion. Sickness has no legal right to my body. I walk in supernatural wellness in the name of Jesus.</div>
+  <div class="decl-card-accent"></div>
+</div>
+```
+
+  </div>
+</div>
+
+<!-- ══ VOID ══ -->
+
+<div style="background:#FDFAF5;width:100%;position:relative;z-index:1;">
+<section class="void">
+  <div class="section-tag">Before Declare</div>
+  <h2 class="void-h2">You know what God<br>has promised.<br><em>But you&rsquo;re not saying it.</em></h2>
+  <p class="void-body">You read the scriptures. You&rsquo;ve heard the sermon. You&rsquo;ve written the promise in your journal. But somewhere between what God has said and what your mouth speaks, there is a gap. And in that gap, the enemy builds a case.</p>
+  <p class="void-body">Every morning you wake up knowing what God has promised over your marriage, your children, your business, your health &mdash; <strong>and most mornings, you say nothing.</strong> You start the day in your own strength, without arming yourself with the word that was already given to you.</p>
+  <p class="void-body">It is not that you don&rsquo;t believe. It is that nobody handed you the declaration and said &mdash; <strong>speak this, right now, out loud, over your life.</strong></p>
+  <blockquote class="pullquote">&ldquo;Death and life are in the power of the tongue. And those who love it will eat its fruit.&rdquo;<br><small style="font-size:14px;font-style:normal;color:#7A6045;margin-top:6px;display:block;">Proverbs 18:21</small></blockquote>
+  <p class="section-close">That is what Declare was built for.</p>
+</section>
+</div>
+
+<!-- ══ DARK BREAK ══ -->
+
+<div class="dark-break">
+  <div class="dark-break-glow"></div>
+  <div class="dark-break-inner">
+    <p>The promises of God are not automatic.<br>They are <em>enforced by the believer&rsquo;s mouth.</em></p>
+    <p>What you speak over your day sets the atmosphere.<br>What you decree over your family <em>shapes what stands.</em></p>
+    <div class="dark-break-rule"></div>
+    <div class="dark-break-close">Declare gives you the words. You give it your voice.</div>
+  </div>
+</div>
+
+<!-- ══ PERCH ══ -->
+
+<div style="background:#FDFAF5;width:100%;position:relative;z-index:1;">
+<section class="perch">
+  <div class="section-tag">Introducing Declare</div>
+  <h2 class="perch-h2">Imagine starting every day already armed with the Word of God.</h2>
+  <p class="perch-body">Not searching for the right scripture. Not hoping you remember what to say. Opening an app, choosing the area of your life that needs a declaration today, and speaking words carefully crafted from the Word of God &mdash; over your marriage, your children, your finances, your body, your day.</p>
+  <p class="perch-body"><strong>Declare</strong> is a faith-based declaration app with 1,500+ powerful decrees drawn from scripture, organised into every area of life. You open it. You read it. You speak it. And you walk into your day knowing that heaven has been engaged and the Word has gone forth.</p>
+  <p class="perch-body">No download. No setup. Open the link on any device and begin. Because the Word should never be hard to access.</p>
+  <div class="perch-pullquote">Every declaration in this app was written with one purpose &mdash; to help you enforce the covenant promises of God over your life, your loved ones, and your circumstances.</div>
+</section>
+</div>
+
+<!-- ══ MORE DECLARATIONS BENTO ══ -->
+
+<div class="decl-showcase">
+  <div class="decl-showcase-inner">
+    <div class="decl-showcase-hdr">
+      <div class="section-tag">The Declarations</div>
+      <h2>Written from the Word.<br>Spoken in faith.</h2>
+      <p>Every declaration is rooted in scripture. Every word has been chosen intentionally.</p>
+    </div>
+    <div class="decl-bento">
+
+```
+  <div class="bento-card dark-bento">
+    <div class="bento-cat-label">Pregnancy &amp; Birth</div>
+    <div class="bento-num">04</div>
+    <div class="bento-stars">&#10022; &nbsp;&#10022; &nbsp;&#10022;</div>
+    <div class="bento-text">Father, I decree and declare that my womb is blessed and fruitful. <em>You are the God who opens the womb.</em> Every fear about this pregnancy is cancelled. My body cooperates with this life. My baby is knit together perfectly in the name of Jesus.</div>
+    <div class="bento-accent"></div>
+  </div>
+
+  <div class="bento-card gold-bento span2">
+    <div class="bento-cat-label">Commanding Your Night</div>
+    <div class="bento-num">01</div>
+    <div class="bento-stars">&#10022; &nbsp;&#10022; &nbsp;&#10022;</div>
+    <div class="bento-text">Father, as I lay down to sleep I decree that angels are encamped around this home. <em>He grants sleep to those He loves.</em> My mind rests. My body restores. Every plan of the enemy in the night season is dismantled. I wake tomorrow refreshed and ready. My sleep is sweet in the name of Jesus.</div>
+    <div class="bento-accent"></div>
+  </div>
+
+  <div class="bento-card span2">
+    <div class="bento-cat-label">Declarations for Students</div>
+    <div class="bento-num">17</div>
+    <div class="bento-stars">&#10022; &nbsp;&#10022; &nbsp;&#10022;</div>
+    <div class="bento-text">I decree and declare that financial lack does not interrupt my academic journey. <em>In the name of Jesus, every tuition fee needed is provided. Every textbook required is accessed.</em> God is the provider of my education. He does not call me to study and then refuse to fund the calling. My education is covered in the name of Jesus.</div>
+    <div class="bento-accent"></div>
+  </div>
+
+  <div class="bento-card dark-bento">
+    <div class="bento-cat-label">Breaking Addiction</div>
+    <div class="bento-num">02</div>
+    <div class="bento-stars">&#10022; &nbsp;&#10022; &nbsp;&#10022;</div>
+    <div class="bento-text">In the name of Jesus, I decree that whom the Son sets free is <em>free indeed.</em> Every chain is broken. Every stronghold is dismantled. I am no longer defined by what held me. I walk in the liberty that Christ purchased at Calvary.</div>
+    <div class="bento-accent"></div>
+  </div>
+
+</div>
+```
+
+  </div>
+</div>
+
+<!-- ══ CATEGORIES ══ -->
+
+<section class="cats-section">
+  <div class="cats-inner">
+    <div class="cats-hdr">
+      <div class="section-tag">What&rsquo;s Inside</div>
+      <h2>A declaration for every<br>area of your life.</h2>
+      <p>10+ categories. 1,500+ declarations. New content added regularly as your subscription continues.</p>
+    </div>
+    <div class="cats-grid">
+      <div class="cat-card featured-cat">
+        <div class="cat-emoji">&#127774;</div>
+        <div class="cat-name">Commanding Your Day</div>
+        <div class="cat-desc">Declare favour, divine direction and open doors before you take a single step into your day.</div>
+        <div class="cat-count">198 declarations</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-emoji">&#129354;</div>
+        <div class="cat-name">Pregnancy &amp; Birth</div>
+        <div class="cat-desc">Declarations of safety, supernatural health and divine covering through every trimester.</div>
+        <div class="cat-count">188 declarations</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-emoji">&#128106;</div>
+        <div class="cat-name">Family</div>
+        <div class="cat-desc">Decree unity, divine protection and covenant blessing over your household and every person in it.</div>
+        <div class="cat-count">197 declarations</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-emoji">&#127807;</div>
+        <div class="cat-name">Health &amp; Wellness</div>
+        <div class="cat-desc">Stand on what God says about your body. Declare divine health and supernatural restoration.</div>
+        <div class="cat-count">195 declarations</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-emoji">&#128274;</div>
+        <div class="cat-name">Breakthroughs</div>
+        <div class="cat-desc">For the thing that has been stuck. Decree that every gate gives way in the name of Jesus.</div>
+        <div class="cat-count">199 declarations</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-emoji">&#128584;</div>
+        <div class="cat-name">Breaking Addiction</div>
+        <div class="cat-desc">Declarations of freedom, identity and supernatural deliverance for those walking out of bondage.</div>
+        <div class="cat-count">195 declarations</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-emoji">&#128139;</div>
+        <div class="cat-name">Courtship &amp; Dating</div>
+        <div class="cat-desc">Stand on what God says about who He is sending and when. Decree divine timing and alignment.</div>
+        <div class="cat-count">32 declarations</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-emoji">&#127769;</div>
+        <div class="cat-name">Commanding Your Night</div>
+        <div class="cat-desc">Before you sleep, decree rest, protection and divine activity in the night season.</div>
+        <div class="cat-count">195 declarations</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-emoji">&#128170;</div>
+        <div class="cat-name">Myself</div>
+        <div class="cat-desc">Identity, calling, purpose and self-worth &mdash; decree what God says about who you are.</div>
+        <div class="cat-count">187 declarations</div>
+      </div>
+      <div class="cat-card">
+        <div class="cat-emoji">&#127891;</div>
+        <div class="cat-name">Declarations for Students</div>
+        <div class="cat-desc">Wisdom, divine provision for tuition and supernatural recall. Decree over your academic journey.</div>
+        <div class="cat-count">30 declarations</div>
+      </div>
+    </div>
+    <div class="cats-more">And more &mdash; all inside Declare.</div>
+  </div>
+</section>
+
+<!-- ══ SOAR ══ -->
+
+<section class="soar">
+  <div class="soar-inner">
+    <div class="soar-hdr">
+      <div class="section-tag">The Shift</div>
+      <h2>What changes when you<br>speak the Word daily.</h2>
+      <p>Not theory. Real shifts &mdash; in your atmosphere and in you.</p>
+    </div>
+    <div class="soar-grid">
+      <div class="soar-card">
+        <div class="soar-num">01</div>
+        <h3>Your mornings have authority</h3>
+        <p>You stop beginning your day in default mode and start beginning it in declaration. The atmosphere of your home, your workplace changes because your mouth changed. You walk in as someone who has already spoken.</p>
+      </div>
+      <div class="soar-card">
+        <div class="soar-num">02</div>
+        <h3>Your faith becomes active</h3>
+        <p>Faith without a corresponding action &mdash; including the action of your mouth &mdash; is still. Declare activates your faith daily. You move from passively believing to actively enforcing the covenant. The Word goes out. It does not return void.</p>
+      </div>
+      <div class="soar-card">
+        <div class="soar-num">03</div>
+        <h3>Your family is covered</h3>
+        <p>Something happens when a parent, a spouse, a believer rises and speaks the Word over their household. Declare gives you the declarations to do it &mdash; over your marriage, your children, your home &mdash; every single day.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ TESTIMONIALS ══ -->
+
+<section class="testi">
+  <div class="testi-inner">
+    <div class="testi-hdr">
+      <div class="section-tag">Testimonies</div>
+      <h2>The Word is working.</h2>
+    </div>
+    <div class="testi-grid">
+      <div class="testi-card">
+        <div class="testi-quote">I started the pregnancy declarations in my second trimester and something shifted. I went from fear every morning to peace. I spoke those words every day and my baby arrived healthy. All glory to God.</div>
+        <div class="testi-who">
+          <div class="testi-av">&#129354;</div>
+          <div>
+            <div class="testi-name">Adaeze M.</div>
+            <div class="testi-desc">Mother &mdash; Pregnancy declarations</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">I open Declare every morning before I open anything else. The Commanding Your Day category has changed how I walk into meetings, how I handle my business, how I carry myself. My whole atmosphere changed.</div>
+        <div class="testi-who">
+          <div class="testi-av">&#127774;</div>
+          <div>
+            <div class="testi-name">Emmanuel T.</div>
+            <div class="testi-desc">Entrepreneur &mdash; Daily declarations</div>
+          </div>
+        </div>
+      </div>
+      <div class="testi-card">
+        <div class="testi-quote">I had been believing God for a godly partner for years. I started speaking the courtship declarations and within months everything shifted. I am now engaged. Declare is not a coincidence.</div>
+        <div class="testi-who">
+          <div class="testi-av">&#128139;</div>
+          <div>
+            <div class="testi-name">Chidinma O.</div>
+            <div class="testi-desc">Now engaged &mdash; Courtship declarations</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ══ PROMISE STRIP ══ -->
+
+<div class="promise">
+  <div class="promise-glow"></div>
+  <div class="promise-inner">
+    <p>God has already spoken over your life.</p>
+    <p>The question is whether <em>your mouth</em> is in agreement.</p>
+    <div class="promise-rule"></div>
+    <p style="font-size:clamp(17px,2.5vw,24px);color:rgba(237,228,211,.75);font-style:italic;font-weight:300;">Declare gives you the words. You give it your voice.</p>
+  </div>
+</div>
+
+<!-- ══ PRICING ══ -->
+
+<section class="pricing">
+  <div class="pricing-inner">
+    <div class="pricing-hdr">
+      <div class="section-tag">Get Access</div>
+      <h2>Choose your plan</h2>
+      <p>Full access to every declaration. New content added regularly. Cancel anytime.</p>
+    </div>
+    <div class="pricing-grid">
+
+```
+  <!-- MONTHLY -->
+  <div class="price-card">
+    <div class="price-period">Monthly</div>
+    <div class="price-amount"><sup>$</sup>9.99</div>
+    <div class="price-per">per month &middot; billed monthly</div>
+    <div class="price-divider"></div>
+    <div class="price-includes-title">Everything included</div>
+    <div class="price-item"><span class="price-check">&#10022;</span>1,500+ declarations across all categories</div>
+    <div class="price-item"><span class="price-check">&#10022;</span>New categories added regularly</div>
+    <div class="price-item"><span class="price-check">&#10022;</span>Works on any device &mdash; no download</div>
+    <div class="price-item"><span class="price-check">&#10022;</span>Save your favourite declarations</div>
+    <div class="price-item"><span class="price-check">&#10022;</span>Declaration history tracking</div>
+    <br>
+    <a href="https://whop.com/checkout/plan_D5EFyiFbKpnPC" class="price-cta">Monthly Access &mdash; $9.99 &rarr;</a>
+    <div class="price-note">Cancel anytime from your account</div>
+  </div>
+
+  <!-- 6 MONTHS HERO -->
+  <div class="price-card hero-card">
+    <div class="hero-card-glow"></div>
+    <div class="best-offer-badge"><span class="best-offer-badge-star">&#10022;</span> Best Offer &mdash; Save $30</div>
+    <div class="price-period">6 Months</div>
+    <div class="price-amount" style="color:#FDFAF5;"><sup>$</sup>29.99</div>
+    <div class="price-per">one payment &middot; 6 full months of access</div>
+    <div class="price-saving">You save $30 compared to monthly</div>
+    <div class="price-divider"></div>
+    <div class="price-includes-title">Everything included, 6 months</div>
+    <div class="price-item"><span class="price-check">&#10022;</span>1,500+ declarations across all categories</div>
+    <div class="price-item"><span class="price-check">&#10022;</span>New categories added regularly</div>
+    <div class="price-item"><span class="price-check">&#10022;</span>Works on any device &mdash; no download</div>
+    <div class="price-item"><span class="price-check">&#10022;</span>Save your favourite declarations</div>
+    <div class="price-item"><span class="price-check">&#10022;</span>Declaration history tracking</div>
+    <div class="price-item"><span class="price-check">&#10022;</span><span class="price-item-bold">6 months for the price of 3</span></div>
+    <br>
+    <a href="https://whop.com/checkout/plan_BIgsqJQsEUlLw" class="price-cta gold-cta">Get 6 Months &mdash; $29.99 &rarr;</a>
+    <div class="price-note">Best value &middot; One payment &middot; Full 6 months</div>
+  </div>
+
+</div>
+<div class="pricing-guarantee">
+  <strong>Secure checkout via Whop.</strong> Digital access &mdash; no physical items shipped. Access begins immediately after payment. Questions? <a href="mailto:tomiwabankole172@gmail.com">tomiwabankole172@gmail.com</a>
+</div>
+```
+
+  </div>
+</section>
+
+<!-- ══ CLOSING ══ -->
+
+<footer class="closing">
+  <div class="closing-inner">
+    <div class="closing-logo">
+      <div class="closing-mark">&#10022;</div>
+      Declare
+    </div>
+    <div class="closing-tagline">Daily declarations that change everything.</div>
+    <a href="https://whop.com/checkout/plan_BIgsqJQsEUlLw" class="closing-cta">Get 6 Months &mdash; $29.99 &rarr;</a>
+    <div class="closing-sign">
+      Thank you for letting this be part of your walk with God.<br>
+      <strong>&mdash; Koinocards</strong>
+    </div>
+    <div class="closing-email">
+      Questions &rarr; <a href="mailto:tomiwabankole172@gmail.com">tomiwabankole172@gmail.com</a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
